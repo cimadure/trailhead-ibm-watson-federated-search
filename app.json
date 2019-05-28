@@ -6,14 +6,17 @@
   "website":
     "https://github.com/muenzpraeger/trailhead-ibm-watson-federated-search",
   "repository":
-    "https://github.com/muenzpraeger/trailhead-ibm-watson-federated-search",
+    "https://github.com/cimadure/trailhead-ibm-watson-federated-search",
   "success_url": "/",
   "env": {
-    "WATSON_USERNAME": {
-      "description": "Watson Discovery Service Username"
-    },
-    "WATSON_PASSWORD": {
-      "description": "Watson Discovery Service Password"
+//    "WATSON_USERNAME": {
+//      "description": "Watson Discovery Service Username"
+//    },
+//    "WATSON_PASSWORD": {
+//      "description": "Watson Discovery Service Password"
+//    },
+    "SERVICE_NAME_IAM_APIKEY": {
+      "description": "Watson Discovery Service API Key"
     },
     "ENVIRONMENT_ID": {
       "description": "Watson Discovery Service Environment ID"

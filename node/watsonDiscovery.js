@@ -1,11 +1,12 @@
 "use strict";
 
-var DiscoveryV1 = require("watson-developer-cloud/discovery/v1");
+var DiscoveryV1 = require("ibm-watson/discovery/v1");
 
 var discovery = new DiscoveryV1({
-  username: process.env.WATSON_USERNAME,
-  password: process.env.WATSON_PASSWORD,
-  version_date: DiscoveryV1.VERSION_DATE_2017_04_27
+  // username: process.env.WATSON_USERNAME,
+  // password: process.env.WATSON_PASSWORD,
+  iam_apikey: process.env.SERVICE_NAME_IAM_APIKEY,
+  version:'2019-02-01'
 });
 
 exports.runQuery = (query, byId, callback) => {
